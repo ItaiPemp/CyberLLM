@@ -199,4 +199,3 @@ def write_llm_txt(pcap_path, window_size=60, step_size=60, output_txt="/mnt/data
 
     return output_txt
 
-write_llm_txt("gobuster.pcapng", window_size=60, step_size=60, output_txt="output.txt")
