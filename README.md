@@ -18,7 +18,8 @@ It processes packets in time-based windows, groups them into flows, analyzes pay
 ## ▶️ Example
 
 ```bash
-python parser.py sample.pcap --window_size 60 --step_size 30 --output_path report.txt```
+python parser.py sample.pcap --window_size 60 --step_size 30 --output_path report.txt
+```
 
 
 # 2. Evaluating LLMs automatically - Windows quick start (PowerShell)
