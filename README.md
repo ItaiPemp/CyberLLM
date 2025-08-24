@@ -1,5 +1,20 @@
 # 1. Using the Parser
-TODO: explain the parser
+
+This parser analyzes `.pcap` files to extract network flows and detect potential attacks using signature matching and heuristics.
+
+It processes packets in time-based windows, groups them into flows, analyzes payloads and metadata, and writes a detailed `.txt` report with flow-level insights and possible attack indicators.
+
+---
+
+## 🛠 Parameters
+
+| Parameter         | Description                                      | Default           |
+|------------------|--------------------------------------------------|-------------------|
+| `pcap_path`      | Path to the input `.pcap` file                   | **Required**      |
+| `--window_size`  | Time window size in seconds for analysis         | `60`              |
+| `--step_size`    | Step size in seconds between windows             | `60`              |
+| `--output_path`  | File path for the output `.txt` report           | `output_llm.txt`  |
+
 
 # 2. Evaluating LLMs automatically - Windows quick start (PowerShell)
 ## 2.1) Go to your project folder
